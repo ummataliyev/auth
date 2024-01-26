@@ -13,10 +13,10 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/ummataliyev/auth.git
+git clone git@github.com:ummataliyev/auth.git
 
 # Navigate to the project directory
-cd <auth>
+cd auth
 
 # Create a virtual environment (optional but recommended)
 python -m venv venv
