@@ -1,4 +1,4 @@
-# Authorization using Telegram Messenger Task
+# Authorization using Telegram Messenger
 
 ## Prerequisites
 
