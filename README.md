@@ -13,7 +13,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your_username>/<your_project_name>.git
+git clone https://github.com/ummataliyev/auth.git
 
 # Navigate to the project directory
 cd <auth>
