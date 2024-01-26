@@ -1,0 +1,7 @@
+telebot==0.0.5
+django==5.0.1
+psycopg2==2.9.9
+environs==10.3.0
+django-cors-headers==4.3.1
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.1
