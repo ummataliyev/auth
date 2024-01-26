@@ -1,10 +1,10 @@
-# Authorization using Telegram Messanger Task
+# Authorization using Telegram Messenger Task
 
 ## Prerequisites
 
 - Python 3.12
 - Django 5.0.1
-- PostgreSQL (15.4)
+- PostgreSQL 15.4
 - Ngrok (for local development and testing)
 
 ## Getting Started
@@ -18,47 +18,38 @@ git clone git@github.com:ummataliyev/auth.git
 # Navigate to the project directory
 cd auth
 
-# Create a virtual environment (optional but recommended)
-python -m venv venv
-# or
-sudo apt install virtualenv
-virtualenv venv
-
-# Activate the virtual environment
+# Create a virtual environment (recommended)
+python -m venv venv  # On Windows: python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
 pip install --upgrade pip
-pip3 install -r requirements.txt
-```
+pip install -r requirements.txt
+
 
 ### Database Setup
-
-```bash
-# Connect your database with project (look to .env.dist)
+# Connect your database with project (PostgreSQL is recommended)
 python3 manage.py migrate
-```
+
 
 ### Set Environment Variables
-```bash
-# Check out .env.dist
-```
+# Check out .env.dist for required environment variables
+# Django SECRET_KEY
+
 
 ### Ngrok Setup
-```bash
-# Donwload ngrok if not exsist
+# Download ngrok if not exist
 https://ngrok.com/download
 
 # Run ngrok to expose your local Django development server
 ngrok http 8000
-```
+
 
 ### Set Webhook
-```bash
+# Replace <YOUR_NGROK_URL> and <YOUR_TELEGRAM_BOT_TOKEN> with actual values
 curl -F "url=<YOUR_NGROK_URL>/api/v1/bot/webhook/" https://api.telegram.org/bot<YOUR_TELEGRAM_BOT_TOKEN>/setWebhook
-```
+
 
 ### Run Djano Server
-```bash
 python3 manage.py runserver
-```
+# The Django development server will run at http://127.0.0.1:8000/
