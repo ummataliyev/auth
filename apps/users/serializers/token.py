@@ -11,7 +11,6 @@ class ObtainPairSerializer(TokenObtainPairSerializer):
     the custom optain serializer.
     """
     code = serializers.IntegerField()
-    password = serializers.IntegerField(allow_null=True)
 
     @classmethod
     def get_token(cls, user):

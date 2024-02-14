@@ -19,7 +19,6 @@ class TGUser(
     phone_number = models.BigIntegerField(null=True, unique=True)
     code = models.CharField(max_length=6, null=True, blank=True)
     username = models.CharField(max_length=255, null=True, blank=True)
-    password = models.CharField(max_length=128, null=True, blank=True)
 
     USERNAME_FIELD = 'chat_id'
 
